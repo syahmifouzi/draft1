@@ -5,6 +5,8 @@ import { fab, faFacebookSquare, faInstagram, faTwitter, faWhatsapp } from '@fort
 import getFirebase from '../firebase'
 import FirebaseContext from '../components/FirebaseContext'
 import SignIn from '../containers/SignIn'
+import { Provider } from 'mobx-react'
+import store from '../store/'
 
 library.add(fab, faFacebookSquare, faInstagram, faTwitter, faWhatsapp)
 
@@ -39,9 +41,11 @@ class Layout extends Component {
     if (!firebase) return null
 
     return (
-      <FirebaseContext.Provider value={firebase}>
-        {authenticated ? this.props.children : <SignIn />}
-      </FirebaseContext.Provider>
+      <Provider store={store}>
+        <FirebaseContext.Provider value={firebase}>
+          {authenticated ? this.props.children : <SignIn />}
+        </FirebaseContext.Provider>
+      </Provider>
     )
   }
 }

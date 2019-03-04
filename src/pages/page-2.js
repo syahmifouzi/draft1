@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { withFirebase } from '../components/FirebaseContext'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Counter from "../components/statelessMobx"
 
 // How to update object inside setState
 // https://stackoverflow.com/questions/43638938/updating-an-object-with-setstate-in-react
@@ -12,7 +13,6 @@ import SEO from "../components/seo"
 
 // Warning: controlled to uncontrolled components
 // https://stackoverflow.com/questions/51406927/reactjs-warning-a-component-is-changing-an-uncontrolled-input-of-type-text-to
-
 
 class SecondPage extends Component {
 
@@ -142,6 +142,7 @@ class SecondPage extends Component {
       <Layout>
         <SEO title="Page two" />
         <h1>Hi from the second page</h1>
+        <Counter />
         <p>Welcome to page 2</p>
         <form onSubmit={this.onSubmit}>
           <div>
