@@ -21,6 +21,8 @@
     "gatsby-plugin-sharp": "^2.0.20",
     "gatsby-source-filesystem": "^2.0.22",
     "gatsby-transformer-sharp": "^2.1.13",
+    "mobx": "^5.9.0",
+    "mobx-react": "^5.4.3",
     "prop-types": "^15.6.2",
     "react": "^16.8.0",
     "react-chartjs-2": "^2.7.4",
