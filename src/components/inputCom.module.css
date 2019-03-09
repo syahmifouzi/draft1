@@ -1,0 +1,139 @@
+.bg {
+  background: linear-gradient(to right, #512da8, #673ab7);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.label {
+  color: white;
+  padding: 0 5px;
+}
+
+.field {
+  margin: 10px 0;
+  width: 100%;
+  height: 56px;
+  border-radius: 4px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: 0.3s background-color ease-in-out, 0.3s box-shadow ease-in-out;
+}
+
+.field span {
+  display: block;
+  overflow: hidden;
+  padding: 0 16px;
+}
+
+.field:hover {
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.field.active {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.field.active input {
+  padding: 24px 16px 8px 16px;
+}
+
+.field input {
+  width: 100%;
+  height: 56px;
+  position: relative;
+  border: none;
+  border-radius: 4px;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  background-color: transparent;
+  color: #282828;
+  outline: none;
+  box-shadow: 0px 4px 20px 0px transparent;
+  transition: 0.3s background-color ease-in-out, 0.3s box-shadow ease-in-out,
+    0.1s padding ease-in-out;
+  -webkit-appearance: none;
+}
+
+.field input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.field input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.field input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.field input:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.table span {
+  display: block;
+}
+
+.table input {
+  width: 100%;
+}
+
+.box {
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 4px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: 0.3s background-color ease-in-out, 0.3s box-shadow ease-in-out;
+}
+
+.box span {
+  display: block;
+  overflow: hidden;
+}
+
+.box:hover {
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.box.active {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.box.active input {
+  padding: 24px 16px 8px 16px;
+}
+
+.box input {
+  width: 100%;
+  position: relative;
+  border: none;
+  border-radius: 4px;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  background-color: transparent;
+  color: #282828;
+  outline: none;
+  box-shadow: 0px 4px 20px 0px transparent;
+  transition: 0.3s background-color ease-in-out, 0.3s box-shadow ease-in-out,
+    0.1s padding ease-in-out;
+  -webkit-appearance: none;
+}
+
+.box input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.box input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.box input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.box input:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}

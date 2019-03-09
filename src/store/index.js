@@ -11,15 +11,26 @@ import { observable, action, decorate } from 'mobx'
 
 class Store {
   title = '首页'
+  num = 3
 
   updateTitle = title => {
     this.title = title
   }
+
+  updateNum = (num) => {
+    this.num = num
+  }
+
+  // add(g) {
+  //   this.groceries.push(g);
+  // }
 }
 
 decorate(Store, {
   title: observable,
+  num: observable,
   updateTitle: action,
+  updateNum: action,
 })
 
 export default new Store()
