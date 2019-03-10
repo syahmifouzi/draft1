@@ -15,6 +15,11 @@ import SignOut from '../containers/SignOut'
 // https://github.com/firebase/firebaseui-web-react
 // https://github.com/the-road-to-react-with-firebase/react-firebase-authentication/tree/34d1887ecee83af0b3d2a51f4a7c78a55e2dabba
 
+// Nodejs on ubuntu
+// https://tecadmin.net/install-latest-nodejs-npm-on-ubuntu/
+// https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/
+
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
